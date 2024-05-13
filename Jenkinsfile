@@ -11,16 +11,6 @@ pipeline{
                 git ' https://github.com/pradeep8577/react-jenkins.git'
             }
         }
-        stage('Install'){
-            steps{
-                sh 'npm install'
-            }
-        }
-        stage('Build'){
-            steps{
-                sh 'npm run build'
-            }
-        }
         stage('Docker Build'){
             steps{
                 script{
